@@ -1,0 +1,48 @@
+$light-blue: #04C5FE;
+$dark-blue: #048AB1;
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.Header {
+  background: #f2f2f2;
+  // background: linear-gradient(to bottom, #fcfcfc, #d2d2d2);
+  display: flex;
+  height: 1rem;
+  justify-content: space-around;
+  padding: 8px 0 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.header-left,
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  button {
+    padding-top: 8px;
+  }
+}
+
+
+.header-logo {
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+.header-name {
+  color: $light-blue;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
+.header-button {
+  color: $dark-blue;
+  font-size: 1rem;
+}
