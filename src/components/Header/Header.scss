@@ -1,5 +1,6 @@
 $light-blue: #04C5FE;
 $dark-blue: #048AB1;
+$gradient: linear-gradient( 150deg, #04C5FE, #048AB1, #FF206E);;
 
 button {
   background: transparent;
@@ -35,7 +36,6 @@ button {
   }
 }
 
-
 .header-logo {
   height: 4.5rem;
   cursor: pointer;
@@ -46,6 +46,10 @@ button {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0 1rem;
+}
+
+.header-name:hover {
+  color: $dark-blue;
 }
 
 .header-button {

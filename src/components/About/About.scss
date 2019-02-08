@@ -1,11 +1,12 @@
 $light-blue: #04C5FE;
 $dark-blue: #048AB1;
 $light-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+$gradient: linear-gradient( 150deg, #04C5FE, #048AB1, #FF206E);
 
 .About {
   color: #444;
   margin: 0;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   width: 100%;
 }
 
@@ -16,10 +17,10 @@ h3 {
 }
 
 article {
-  text-align: center;
   letter-spacing: 1px;
   margin: 2rem auto;
   max-width: 60rem;
+  text-align: center;
 }
 
 ul {
@@ -50,16 +51,25 @@ p {
   z-index: 0;
   .about-image {
     height: 3rem;
-    // filter: invert(50%);
   }
 }
 
-// .first-icon {
-//   margin-bottom: 2rem;
-// }
+.background-photo {
+  filter: opacity(.1);
+  left: 0;
+  position: fixed;
+  top: -18rem;
+  width: 100vw;
+  z-index: -1;
+}
 
 .about-intro {
-  margin-bottom: 5rem;
+  h1 {
+    text-shadow: 0 0 12px rgba(0, 0, 0, .1);
+  }
+  p {
+    text-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+  }
 }
 
 .about-photo {
@@ -69,7 +79,15 @@ p {
   margin-top: 3rem;
 }
 
+.profile-picture {
+  border-radius: 50%;
+  box-shadow: $light-shadow;
+  margin-top: 3rem;
+  width: 20rem;
+}
+
 section {
+  background: linear-gradient(to left, #fcfcfc, #f2f2f2);
   display: grid;
   grid-template-columns: 30rem 30rem;
   letter-spacing: 1px;
@@ -81,7 +99,7 @@ section {
 
 .about-tech {
   color: #fcfcfc;
-  background: $dark-blue;
+  background: $gradient;
   box-shadow: $light-shadow;
   width: 60rem;
   h3 {
@@ -124,3 +142,4 @@ section {
   }
 
 }
+
