@@ -49,19 +49,19 @@ class About extends Component {
         </div>
         <section className='about-tech'>
           <article className='about-education'>
-            <h3>Education</h3>
+            <h3>education</h3>
             <p>
               On January 10, 2019, I graduated from the Turing School of Software and Design in Denver, Colorado. I'm a graduate of their Front-End Engineering program, where I learned the fundamentals of development, including Languages, frameworks, and libraries, as well as version control, unit testing, continuous integration, and deployment. I'm currently actively seeking job opportunities, and plan to apply my skills in the following areas. 
             </p>
           </article>
           <article className='about-list stack-list'>
-            <h3>Tech Stack</h3>
+            <h3>tech stack</h3>
             <p>
               HTML5, Javascript (ES5, ES6, ES7 +), CSS3, CSS Preprocessors (SASS, SCSS), Object Oriented Programming, JQuery, React, Redux, React-Router, React Native, Vue, Node, Express, Knex, SQL
             </p>
           </article>
           <article className='about-list tech-list'>
-            <h3>Other Technologies</h3>
+            <h3>other technologies</h3>
             <ul>
               <li>Version Control (Git)</li>
               <li>Terminal</li>

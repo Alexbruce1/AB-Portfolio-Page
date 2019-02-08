@@ -13,7 +13,7 @@ class Header extends Component {
               <img className='header-logo' src={logo} alt=''/>
             </NavLink>
             <NavLink title='Alex Bruce' to='/' className='navlink'>
-              <button className='header-name'>alex bruce</button>
+              <button className='header-name'>Alex Bruce</button>
             </NavLink>
           </div>
           <div className='header-right'>
