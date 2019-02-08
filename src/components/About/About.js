@@ -4,6 +4,8 @@ import Person from '../../Images/person.svg';
 import Software from '../../Images/software.svg';
 import computer from '../../Images/img1.jpg';
 import me from '../../Images/me.jpg';
+import 'animate.css/animate.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class About extends Component {
   constructor() {
@@ -37,31 +39,33 @@ class About extends Component {
     return (
       <div className='About'>
         <article className='about-intro'>
-          <img className='background-photo' alt='' src={computer}/>
+            <img className='background-photo' alt='' src={computer}/>
           <h1>{greeting}, I'm alex</h1>
           <p>
             I'm a front-end software developer with a passion for problem-solving, collaboration, music, dogs, and fast cars. I've always loved solving puzzles and figuring out how things work, which has occasionally led to taking my car apart just to see what makes it tick. I've, more recently, discovered a similar love for JavaScript. I enjoy a good challenge, and live for the 'builder's high' feeling after completing something. Now, creating clean, cohesive, and powerful UIs is what occupies most of my time.
           </p>
-          <img className='profile-picture' alt='' src={me}/>
+          <ScrollAnimation animateOnce duration='2' animateIn='fadeIn'>
+            <img className='profile-picture' alt='' src={me}/>
+          </ScrollAnimation>
         </article>
         <div className='about-icon'>
           <img className='about-image' alt='' src={Software} />
         </div>
         <section className='about-tech'>
           <article className='about-education'>
-            <h3>Education</h3>
+            <h3>education</h3>
             <p>
               On January 10, 2019, I graduated from the Turing School of Software and Design in Denver, Colorado. I'm a graduate of their Front-End Engineering program, where I learned the fundamentals of development, including Languages, frameworks, and libraries, as well as version control, unit testing, continuous integration, and deployment. I'm currently actively seeking job opportunities, and plan to apply my skills in the following areas. 
             </p>
           </article>
           <article className='about-list stack-list'>
-            <h3>Tech Stack</h3>
+            <h3>tech stack</h3>
             <p>
               HTML5, Javascript (ES5, ES6, ES7 +), CSS3, CSS Preprocessors (SASS, SCSS), Object Oriented Programming, JQuery, React, Redux, React-Router, React Native, Vue, Node, Express, Knex, SQL
             </p>
           </article>
           <article className='about-list tech-list'>
-            <h3>Other Technologies</h3>
+            <h3>other technologies</h3>
             <ul>
               <li>Version Control (Git)</li>
               <li>Terminal</li>
