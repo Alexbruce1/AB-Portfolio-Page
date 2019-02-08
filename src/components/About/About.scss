@@ -1,13 +1,30 @@
+$light-blue: #04C5FE;
+$dark-blue: #048AB1;
+$light-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+
 .About {
-  // background: green;
-  max-width: 60rem;
-  margin: auto;
-  padding: 2rem 1rem;
-  width: 90%;
+  color: #444;
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: $dark-blue;
 }
 
 article {
-  text-align: justify;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 2rem auto;
+  max-width: 60rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
 }
 
 p,
@@ -18,5 +35,92 @@ li {
 
 p {
   padding: 0 1rem;
-  text-indent: 10px;
+}
+
+.about-icon {
+  background: #f2f2f2;
+  border-radius: 50%;
+  box-shadow: $light-shadow;
+  grid-column-end: span 2;
+  margin: auto;
+  padding: 12px;
+  position: relative;
+  top: 2rem;
+  width: 3rem;
+  z-index: 0;
+  .about-image {
+    height: 3rem;
+    // filter: invert(50%);
+  }
+}
+
+// .first-icon {
+//   margin-bottom: 2rem;
+// }
+
+.about-intro {
+  margin-bottom: 5rem;
+}
+
+.about-photo {
+  border-radius: 4px;
+  box-shadow: $light-shadow;
+  width: 50rem;
+  margin-top: 3rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  letter-spacing: 1px;
+  padding: 2rem calc(50% - 30rem) 0;
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.about-tech {
+  color: #fcfcfc;
+  background: $dark-blue;
+  box-shadow: $light-shadow;
+  width: 60rem;
+  h3 {
+    color: $light-blue;
+  }
+  .about-education {
+    grid-column-end: span 2;
+  }
+  .about-list {
+    max-width: 30rem;
+    padding: 0 calc(50% - 30rem);
+    text-align: justify;
+    width: 100%;
+    p {
+      padding: 0;
+    }
+  }
+  .stack-list {
+    h3 {
+      text-align: left;
+    }
+  }
+  .tech-list {
+    h3 {
+      text-align: right;
+    }
+  }
+}
+
+.about-personal {
+  width: 60rem;
+  .personal-intro {
+    grid-column-end: span 2;
+  }
+  .personal-visual,
+  .personal-functional {
+    p {
+      text-align: justify;
+    }
+  }
+
 }
