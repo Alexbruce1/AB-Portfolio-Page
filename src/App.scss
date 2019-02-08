@@ -1,8 +1,14 @@
+$light-blue: #04C5FE;
+$dark-blue: #048AB1;
+
 * {
   font-family: 'Work Sans', sans-serif;
+  outline: none;
+  transition-duration: .2s;
 }
 
 body {
+  background-color: #fcfcfc;
 }
 
 .App {
