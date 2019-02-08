@@ -1,0 +1,13 @@
+$light-blue: #04C5FE;
+$dark-blue: #048AB1;
+$gradient: linear-gradient( 150deg, #04C5FE, #048AB1, #FF206E);;
+
+.Footer {
+  background: $gradient;
+  display: block;
+  padding: 5rem 0 1rem 0;
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
