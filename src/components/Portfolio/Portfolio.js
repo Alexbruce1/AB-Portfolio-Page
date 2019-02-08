@@ -6,7 +6,7 @@ import landing from '../../Images/wof/landing.png';
 import mtlogin from '../../Images/mt/login.png';
 import mtmain from '../../Images/mt/main.png';
 import mtexpanded from '../../Images/mt/expanded.png';
-import "animate.css/animate.min.css";
+import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
@@ -21,19 +21,19 @@ class Portfolio extends Component {
         <section className='portfolio-wof'>
           <h2 className='app-intro'>World of Flags</h2>
           <p className='app-description'>World of Flags was the result of the Cross-Pollination project I took part in, and the final major project I worked on at Turing. Two front-end students (myself included) grouped up with two back-end students to create a full-stack application. We built a React app that quizzes users on the flags of the world. It gives hints, if needed, of the shape of the country, and then facts about the country. A user can accumulate points to compete with friends. <br/> This app was built as a mobile-first application, and later scaled up to fit tablets and desktops. While certain features are still in the works for the future, the app is functioning and deployed on Heroku. Give it a shot! <br/><br/> To view this app, mobile is recommended, but not necessary.</p>
-          <ScrollAnimation animateOnce offset='100' duration='2' animateIn='fadeInUpBig'>
+          <ScrollAnimation animateOnce offset='300' duration='2' animateIn='fadeInUpBig'>
             <article className='portfolio-images'>
               <h2>intro screen</h2>
               <img className='iphone-mockup' alt='' src={landing} />
             </article>
           </ScrollAnimation>
-          <ScrollAnimation animateOnce offset='100' delay='250' duration='2' animateIn='fadeInUpBig'>
+          <ScrollAnimation animateOnce offset='300' delay='250' duration='2' animateIn='fadeInUpBig'>
             <article className='portfolio-images'>
               <h2>main page</h2>
               <img className='iphone-mockup' alt='' src={main} />
             </article>
           </ScrollAnimation>
-          <ScrollAnimation animateOnce offset='100' delay='500' duration='2' animateIn='fadeInUpBig'>
+          <ScrollAnimation animateOnce offset='300' delay='500' duration='2' animateIn='fadeInUpBig'>
             <article className='portfolio-images'>
               <h2>account page</h2>
               <img className='iphone-mockup' alt='' src={account} />
@@ -49,19 +49,19 @@ class Portfolio extends Component {
             Movie Tracker is an application designed to allow users to view information about movies currently playing in theaters. It utilizes the Movie Database API to collect movie data, and is built primarily using React.js and Redux. It's the first fairly large scale React/Redux app that Turing students build. <br/><br/> To view this app, desktop or laptop orientation is recommended.
           </p>
             <article className='portfolio-images'>
-              <ScrollAnimation animateOnce offset='400' duration='2' animateIn='fadeInUpBig'>
+              <ScrollAnimation animateOnce offset='300' duration='2' animateIn='fadeInUpBig'>
                 <h2>login screen</h2>
                 <img className='macbook-mockup' alt='' data-aos="zoom-in" src={mtlogin} />
               </ScrollAnimation>
             </article>
           <article className='portfolio-images'>
-            <ScrollAnimation animateOnce offset='400' duration='2' animateIn='fadeInUpBig'>
+            <ScrollAnimation animateOnce offset='300' delay='100' duration='2' animateIn='fadeInUpBig'>
               <h2>main screen</h2>
               <img className='macbook-mockup' alt='' data-aos="zoom-in" src={mtmain} />
             </ScrollAnimation>
           </article>
           <article className='portfolio-images'>
-            <ScrollAnimation animateOnce offset='400' duration='2' animateIn='fadeInUpBig'>
+            <ScrollAnimation animateOnce offset='300' delay='200' duration='2' animateIn='fadeInUpBig'>
               <h2>expanded movie screen</h2>
               <img className='macbook-mockup' alt='' data-aos="zoom-in" src={mtexpanded} />
             </ScrollAnimation>
