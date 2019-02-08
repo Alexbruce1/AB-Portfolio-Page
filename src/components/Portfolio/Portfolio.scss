@@ -69,6 +69,10 @@ $gradient: linear-gradient( 150deg, #04C5FE, #048AB1, #FF206E);;
   max-width: 40rem;
 }
 
+.macbook-mockup:active {
+  max-width: 60rem;
+}
+
 .mt-link-container {
   display: grid;
   grid-column-end: span 3;
